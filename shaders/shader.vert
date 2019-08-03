@@ -8,7 +8,12 @@ layout(location = 0) in vec2 a_position;
 
 struct Primitive {
     vec2 translate;
-    // vec2 filler;
+    float filler1;
+    float filler2;
+    float filler3;
+    float filler4;
+    float filler5;
+    float filler6;
 };
 
 layout(std140, binding = 0)

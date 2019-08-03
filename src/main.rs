@@ -8,8 +8,12 @@ struct Vertex {
 #[derive(Copy, Clone)]
 struct Primitive {
     translate: [f32; 2],
-    // Uncomment this line, lines 63, 67, and line 11 in shader.vert to make this work
-    // filler: [f32; 2],
+    filler1: f32,
+    filler2: f32,
+    filler3: f32,
+    filler4: f32,
+    filler5: f32,
+    filler6: f32,
 }
 
 fn main() {
@@ -60,11 +64,21 @@ fn main() {
 
     primitives.push(Primitive {
         translate: [0.0, 0.0],
-        // filler: [0.0, 0.0],
+        filler1: 0.0,
+        filler2: 0.0,
+        filler3: 0.0,
+        filler4: 0.0,
+        filler5: 0.0,
+        filler6: 0.0,
     });
     primitives.push(Primitive {
         translate: [1.0, 0.0],
-        // filler: [0.0, 0.0],
+        filler1: 0.0,
+        filler2: 0.0,
+        filler3: 0.0,
+        filler4: 0.0,
+        filler5: 0.0,
+        filler6: 0.0,
     });
 
     let primitives_buffer_size = (std::mem::size_of::<Primitive>() * primitives.len()) as u64;
