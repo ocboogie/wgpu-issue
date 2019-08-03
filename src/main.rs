@@ -13,6 +13,7 @@ struct Primitive {
     filler3: f32,
     filler4: f32,
     filler5: f32,
+    // Commenting this line, lines 73, 82, and line 16 in shader.vert will make it not work
     filler6: f32,
 }
 
